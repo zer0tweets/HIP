@@ -1,13 +1,16 @@
-# HIP Template
+# HIP6: Ramp-up period for data transfer rewards
 
-- Start Date: <!-- fill me in with today's date, YYYY-MM-DD -->
-- HIP PR: <!-- leave this empty -->
-- Tracking Issue: <!-- leave this empty -->
+- Start Date: May 21 2020
+- HIP PR: 
+- Tracking Issue: 
 
 # Summary
 [summary]: #summary
 
-One paragraph explanation of the proposal.
+Data Packets are already transferring on the network. Once the price oracle is in place, users will be able to burn HNT and generate Data Credits, use DC to send packets on the network, and Hotspots routing those packets will earn a reward in the form of HNT.
+This share is expected to be 30% of HNT per month, which is a large amount and can be easily gamed. 
+
+This proposal is to recommend a ramp up to 30% over a period of time to prevent undesirably gaming behaviour.
 
 # Motivation
 [motivation]: #motivation
@@ -15,19 +18,28 @@ One paragraph explanation of the proposal.
 Why are we doing this? What use cases does it support? What problems does it
 solve? What is the expected outcome?
 
+In the early days of data transferring on the network, it is expected that less devices will transact, and the Hotspots transferring data will earn a larger portion of the rewards (30%) as set out in https://www.dewi.org/tokens.
+This proposal is to ensure token distribution is fair as device usage grows and in accordance to the work a Hotspot does.
+
 # Stakeholders
 [stakeholders]: #stakeholders
 
 * Who is affected by this HIP?
+Hotspot owners
+Decentralized Wireless Alliance
+
 
 * How are we soliciting feedback on this HIP from these stakeholders? Note that
   they may not be watching the HIPs repository or even aren't directly active in
-  the Helium Community Slack channels.
+  the Rust Async Ecosystem working group.
+  
+We will be discussing the HIP in community slack
 
 # Detailed Explanation
 [detailed-explanation]: #detailed-explanation
 
 - Introduce and explain new concepts.
+There has been a few suggestions on how we can do this. Those include a slow ramp up to 30% with an increase of n% every n blocks.
 
 - It should be reasonably clear how the proposal would be implemented.
 
